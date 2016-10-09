@@ -101,7 +101,7 @@ describe('mocha-plugin-co', function () {
       var test = new Runnable("generator", function* () {
         var start = Date.now();
         yield sleep(100);
-        expect(Date.now()- start + 1).to.be.above(100);
+        expect(Date.now()- start).to.be.above(90);
       });
 
       test.run(function (err) {
