@@ -1,5 +1,5 @@
 
-A mocha plugin to enable generators (using [co](https://github.com/tj/co)) support.
+A [mocha](https://github.com/mochajs/mocha) plugin to enable generators (using [co](https://github.com/tj/co)) support.
 
 
 ## Installation
@@ -40,7 +40,11 @@ The module monkey patches the `Runnable.prototype.run` method of `mocha` to enab
 
 MIT
 
-# Credits / related
-* mocha-co : mocha fork with co support
-* co-mocha : same as this module, with some limitation (no support for errors, bigger fingerprint, disctinction between generator & non-generators in execution)
+# Related/see also
+* mocha-co : [mocha](https://github.com/mochajs/mocha) fork with co support
+* [co-mocha](https://github.com/blakeembrey/co-mocha) : same as this module, with some limitation (no support for errors, bigger fingerprint, disctinction between generator & non-generators in execution)
 
+
+# Credits
+* [131](https://github.com/131)
+* [blakeembrey](https://github.com/blakeembrey) for [co-mocha](https://github.com/blakeembrey/co-mocha)
