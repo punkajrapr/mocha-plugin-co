@@ -1,4 +1,3 @@
-# Co Mocha
 
 A mocha plugin to enable generators (using [co](https://github.com/tj/co)) support.
 
