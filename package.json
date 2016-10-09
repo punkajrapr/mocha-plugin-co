@@ -1,0 +1,33 @@
+{
+  "name": "mocha-plugin-co",
+  "version": "1.0.0",
+  "description": "Mocha plugin to enable support for generators (using co)",
+  "main": "install.js",
+  "keywords": [
+    "co",
+    "mocha",
+    "generators"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.0.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.2.5",
+    "istanbul": "~0.3.18"
+  },
+  "scripts": {
+    "test": "node node_modules/istanbul/lib/cli.js cover --report text-summary --report html --report lcov  node_modules/mocha/bin/_mocha",
+    "coveralls": "npm install coveralls && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:131/mocha-plugin-co.git"
+  },
+  "author": "Francois Leurent <131.js@cloudyks.org>",
+  "bugs": {
+    "url": "https://github.com/131/mocha-plugin-co/issues"
+  },
+  "homepage": "https://github.com/131/mocha-plugin-co"
+}
