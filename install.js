@@ -1,12 +1,11 @@
 "use strict";
 
-var coMocha = require('./lib/');
+var coRunnable = require('./lib/');
 
-// Patch current mocha instance
 
 try {
   var mocha_path = require.resolve('mocha');
   if(require.cache[mocha_path])
-    coMocha(require.cache[mocha_path].exports.Runnable);
+    coRunnable(require.cache[mocha_path].exports.Runnable);
 } catch(err){ }
 

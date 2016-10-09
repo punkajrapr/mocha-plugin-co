@@ -10,7 +10,7 @@ const sleep  = function(duration) {
 
 
 delete require.cache[require.resolve("mocha/lib/runnable")];
-var Runnable = require('mocha/lib/Runnable');
+var Runnable = require("mocha/lib/runnable");
 
 require('../lib/')(Runnable); //apply plugin
 require('../lib/')(Runnable); //..only once
