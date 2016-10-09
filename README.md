@@ -10,7 +10,7 @@ A [mocha](https://github.com/mochajs/mocha) plugin to enable generators (using [
 {
  "scripts" : {
     "mocha": "node node_modules/mocha/bin/_mocha -r mocha-plugin-co",
-    "coverage": "node node_modules/istanbul/lib/cli.js cover  node_modules/mocha/bin/_mocha -r mocha-plugin-co",
+    "coverage": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -r mocha-plugin-co"
   }
 }
 ```
